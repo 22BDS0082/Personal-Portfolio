@@ -43,7 +43,7 @@ section
 .home .home-heading
 {
     font-size: 7rem;
-    color: #1cb0f6;
+    color: white;
     font-weight: 200;
     line-height: 1.2;
 }
@@ -51,13 +51,60 @@ section
 .home .home-heading span
 {
     font-weight: 800;
+    color: #ff9600;
 }
 
 .home p
 {
-    color:#1cb0f6;
+    color:white;
     font-size: 1.5rem;
     margin-top: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
 }
+
+.header
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5rem 9%;
+    z-index: 100;
+}
+
+.header .navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header .navbar a
+{
+    font-size: 1.5rem;
+    color: white;
+    padding: 0 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.header .navbar .my-name
+{
+    margin-right: auto;
+    color: #ff9600;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.header .menu
+{
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    display:none;
+}
+
