@@ -27,7 +27,7 @@ section
 .home
 {
     height: 100vh;
-    background:black; 
+     background:black;   /*#131c25 */ /*#191e24*/
    
     background-size: cover;
     background-position: center;
@@ -51,7 +51,9 @@ section
 .home .home-heading span
 {
     font-weight: 800;
-    color: #ff9600;
+    /* color: #004583; */
+    color: yellow;
+    
 }
 
 .home p
@@ -79,6 +81,7 @@ section
     align-items: center;
     justify-content: space-between;
     
+    
 }
 
 .header .navbar a
@@ -87,14 +90,24 @@ section
     color: white;
     padding: 0 2rem;
     letter-spacing: 0.3rem;
-    font-weight: 300;
+    font-weight: 250;
     text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,.navbar a.active
+{
+    color: yellow;
+    border-bottom: 3px solid yellow;
 }
 
 .header .navbar .my-name
 {
     margin-right: auto;
-    color: #ff9600;
+    /* color: #004583;ff9600 */
+    color: yellow;
     font-size: 3rem;
     font-weight: 500;
 }
