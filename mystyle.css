@@ -24,6 +24,20 @@ section
 
 }
 
+.heading
+{
+    color: white;
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.heading span
+{
+    font-weight: 800;
+}
+
 .home
 {
     height: 100vh;
@@ -40,7 +54,7 @@ section
     text-align: center;
 }
 
-.home .home-heading
+.home .heading
 {
     font-size: 7rem;
     color: white;
@@ -48,11 +62,11 @@ section
     line-height: 1.2;
 }
 
-.home .home-heading span
+.home .heading span
 {
     font-weight: 800;
     /* color: #004583; */
-    color: yellow;
+    color: rgb(195, 0, 0)
     
 }
 
@@ -99,15 +113,15 @@ section
 
 .navbar a:hover,.navbar a.active
 {
-    color: yellow;
-    border-bottom: 3px solid yellow;
+    color: rgb(195, 0, 0);
+    border-bottom: 3px solid rgb(195, 0, 0);
 }
 
 .header .navbar .my-name
 {
     margin-right: auto;
     /* color: #004583;ff9600 */
-    color: yellow;
+    color: rgb(195, 0, 0);
     font-size: 3rem;
     font-weight: 500;
 }
@@ -121,3 +135,83 @@ section
     display:none;
 }
 
+.projects
+{
+    background-color: black;
+    
+}
+
+.projects .box-container .box .image
+{
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+}
+
+.projects .box-container .box .image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down;
+}
+
+.projects .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    
+    gap: 4rem;
+    
+    
+}
+
+.projects .box-container .box
+{
+    
+    padding: 0.5rem;
+    border-radius: 25px;
+    transition: 400ms;
+    
+}
+
+.projects .box-container .box:hover {
+    transform: scale(1.1, 1.1);
+  }
+.box-container:hover > .box:not(:hover) 
+{
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+.projects .box-container .box .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.projects .box-container .box:hover .content {
+    opacity: 1;
+}
+
+.projects .box-container .box .content h2 {
+    color: rgb(195, 0, 0);
+    font-size: 2.5rem;
+}
+
+.projects .box-container .box .content .button {
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.projects .box-container .box .content .button:hover {
+    background-color: black;
+}
