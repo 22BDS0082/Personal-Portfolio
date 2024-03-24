@@ -168,10 +168,10 @@ section
 .projects .box-container .box
 {
     
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 25px;
     transition: 400ms;
-    
+    background-color: white;
 }
 
 .projects .box-container .box:hover {
@@ -214,4 +214,54 @@ section
 
 .projects .box-container .box .content .button:hover {
     background-color: black;
+}
+
+.project-details-container {
+    display: none;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black; 
+    color: white;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+    width: 85%;
+    height: 55%;
+    border: 2px solid white;
+}
+
+.project-details-container .project-details {
+    text-align: left;
+    font-size: 1.5rem;
+   
+}
+
+.project-details-container .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.project-details-container .project-heading {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.project-details-container .button {
+    display: inline-block; 
+    padding: 0.5rem 1rem;
+    background-color: rgb(195, 0, 0);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.project-details-container .button:hover {
+    background-color: white;
 }
