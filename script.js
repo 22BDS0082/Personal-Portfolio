@@ -45,6 +45,51 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const languagesButton = document.getElementById('languages-button');
+    const frameworksButton = document.getElementById('frameworks-button');
+    const toolsButton = document.getElementById('tools-button');
+    const skillsContainer = document.querySelector('.skills-container');
+
+    function showSkillsDetails(title, subheading, description) {
+        const skillsDetails = `
+            <div class="skills">
+                <span class="close-button">&times;</span>
+                <p class="heading-description">${title}</p>
+                <p class="subheading">${subheading}</p>
+                <p class="description">${description}</p>
+            </div>
+        `;
+        skillsContainer.innerHTML = skillsDetails;
+        skillsContainer.style.display = 'block';
+    }
+
+    function closeSkillsDetails() {
+        skillsContainer.style.display = 'none';
+    }
+
+    languagesButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        showSkillsDetails("Languages:", "Python, C, C++, Java, R, Javascript:", "Proficient in Python, C, C++, Java, R, and JavaScript, encompassing a versatile skill set for various software development needs. With Python, I conduct data analysis, leveraging libraries like NumPy. In C and C++, I am proficient in data structures and algorithms, showcasing my ability to solve problems and think critically. With Java, I am exploring object-oriented programming principles and basic application development. My introduction to R involves learning statistical computing and data analysis techniques. With JavaScript, I create dynamic web applications using frameworks like React.js, focusing on user-centric design and functionality. This breadth of experience across multiple programming languages enables me to deliver comprehensive and efficient solutions to diverse software challenges.");
+    });
+
+    frameworksButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        showSkillsDetails("Frameworks:", "React:", "Proficient in React, a popular JavaScript library used for building user interfaces. With React, I can efficiently develop interactive web applications with reusable components, enabling a smoother and more organized development process. My skills in React include creating dynamic and responsive UIs that enhance user experience, utilizing features like state management, virtual DOM manipulation, and component lifecycle methods. I am adept at integrating React with other libraries and frameworks, such as Redux for state management and React Router for navigation, to create robust and scalable applications. Additionally, my understanding of React hooks enables me to write cleaner and more concise code, improving overall project maintainability. Continuously staying updated with the latest advancements in React, I am committed to leveraging this technology to deliver high-quality, modern web solutions.");
+    });
+
+    toolsButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        showSkillsDetails("Developer Tools:", "GitHub:", "Proficient in GitHub, a widely used platform for version control and collaboration in software development projects. With GitHub, I effectively manage code repositories, track changes, and collaborate with team members using features such as pull requests, code reviews, and issue tracking. I am experienced in utilizing Git, the distributed version control system underlying GitHub, to maintain a structured and organized development workflow. By leveraging GitHub's branching model, I can efficiently work on multiple features or bug fixes simultaneously while ensuring code integrity and stability through version control best practices. Additionally, I am familiar with GitHub Pages for hosting static websites and utilizing GitHub Actions for automating workflows such as testing, building, and deployment. With my proficiency in GitHub, I contribute to creating a collaborative and efficient development environment, enabling seamless teamwork and project success.");
+    });
+
+    skillsContainer.addEventListener('click', function (e) {
+        if (e.target.classList.contains('close-button')) {
+            closeSkillsDetails();
+        }
+    });
+});
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
