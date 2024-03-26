@@ -343,4 +343,78 @@ section {
 .fa-brands {
     font-size: 5.5rem;
 }
+.education-tree {
+    background-color: #131c25;
+}
+
+.education-tree .heading {
+    font-weight: 700;
+}
+
+.education-row {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto; 
+    padding: 0 20px;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-item {
+    padding: 3rem;
+    min-width: 400px;
+    min-height: 200px;
+    border-radius: 25px;
+    background-color: #131c25; 
+    color: #fff; 
+    border: 9px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.parent {
+    position: relative;
+    background-color: #131c25; 
+    color: #fff;
+}
+
+.child-education {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #131c25; 
+    color: #fff;
+}
+
+.child {
+    margin-top: 2rem;
+    border: 5px solid #fff;
+}
+
+.education-item h2,
+.education-item h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff; 
+}
+
+.education-item p {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+.education-item ul
+{
+    font-size: larger;
+}
 
