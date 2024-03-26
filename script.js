@@ -1,3 +1,11 @@
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('.header');
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
 document.addEventListener('DOMContentLoaded', function () {
     const cryptographyButton = document.getElementById('cryptography-button');
     const fileUploadButton = document.getElementById('fileupload-button');
