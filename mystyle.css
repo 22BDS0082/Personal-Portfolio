@@ -418,3 +418,24 @@ section {
     font-size: larger;
 }
 
+.footer {
+    border-top: 0.2rem solid grey;
+    text-align: center;
+    background-color: #131c25;
+    color: white;
+    font-size: 15px;
+}
+
+.socials {
+    list-style: none; 
+    padding: 0; 
+}
+
+.socials a {
+    color: #f5a201; 
+}
+
+.socials .fa-brands {
+    font-size: 2.5rem;
+    margin: 1%;
+}
