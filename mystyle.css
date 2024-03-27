@@ -74,6 +74,10 @@ section {
     padding: 2rem 9%;
     z-index: 100;
 }
+.menu-icon {
+    display: none; 
+    cursor: pointer;
+}
 
 .header .navbar {
     display: flex;
@@ -105,13 +109,7 @@ section {
     font-weight: 500;
 }
 
-.header .menu {
-    font-size: 2.5rem;
-    color: white;
-    cursor: pointer;
-    text-align: left;
-    display: none;
-}
+
 .header.scrolled {
     background-color: white;
 }
@@ -168,6 +166,7 @@ section {
     color: #f5a201;
     font-size: 2.5rem;
 }
+
 
 
 .skills .box-container .box .content .button,
@@ -371,12 +370,14 @@ section {
 .education-row {
     display: flex;
     justify-content: center;
+    
 }
 
 .container {
     max-width: 800px;
     margin: auto; 
     padding: 0 20px;
+    margin: 1rem;
 }
 
 .education-container {
@@ -453,6 +454,64 @@ section {
 }
 
 .socials .fa-brands {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 1%;
 }
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 769px) {
+    .education-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 90%; 
+        padding: 0 10px;
+    }
+
+    .education-item {
+        padding: 2rem; 
+        min-width: auto; 
+    }
+
+    .education-item h2,
+    .education-item h3 {
+        font-size: 1.5rem; 
+    }
+
+    .child-education {
+        gap: 1rem; 
+    }
+
+    .child {
+        margin-top: 1rem;
+    }
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 2rem;
+    }
+
+    .skills .box-container .box,
+    .projects .box-container .box {
+        padding: 0.5rem;
+    }
+
+    .skills-container,
+    .project-details-container {
+        width: 90%;
+        padding: 10px;
+    }
+   .header
+   {
+    visibility: hidden;
+   }
+}
+
