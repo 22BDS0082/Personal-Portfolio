@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     cryptographyButton.addEventListener('click', function (e) {
         e.preventDefault();
-        showProjectDetails("Cryptopy is a Python project that offers basic text encryption and decryption functionality using a substitution cipher approach. It utilizes a predefined character set and substitution characters to convert plaintext into ciphertext and vice versa. The program consists of functions for encryption (encrypt_msg) and decryption (decrypt_msg), each employing their respective dictionaries for character substitution. The system can read input from a file, allowing users to encrypt or decrypt messages based on a specified flag. Additionally, it supports both encryption and decryption operations within the same codebase. By employing a simple yet effective encryption technique, Cryptopy serves as an educational tool for understanding cryptographic concepts and could find application in scenarios where lightweight text security is required, albeit not for robust encryption purposes due to the simplicity of the substitution cipher used.", "python", "https://github.com/ojaskittur/cryptography");
+        showProjectDetails("The NPTEL Practice Quizzes Platform is a web-based application designed to aid students in their preparation for NPTEL (National Programme on Technology Enhanced Learning) courses. This platform provides a comprehensive set of practice quizzes that mirror the format and content of NPTEL exams, helping learners to test their knowledge, track their progress, and improve their performance.", "HTML, CSS, JavaScript", "https://22bds0082.github.io/nptel-practice/index.html#");
     });
 
     fileUploadButton.addEventListener('click', function (e) {
