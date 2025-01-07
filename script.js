@@ -38,9 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     fileUploadButton.addEventListener('click', function (e) {
         e.preventDefault();
-        showProjectDetails("
-
-I played a key role in developing a web application that generates personalized learning roadmaps by analyzing users' current jobs, goal jobs, and skills. I extracted text from user-uploaded resumes stored in S3 buckets and integrated it with the Gemini API to identify relevant skills. By combining API-extracted skills with user inputs, I created targeted skill development plans. Additionally, I utilized S3 buckets to store static files for enhanced performance and scalability and contributed to both backend and frontend development, ensuring efficient data handling and a user-friendly interface.", "HTML, CSS,JavaScript, Django", "https://github.com/ojaskittur/careertrix");
+        showProjectDetails("I played a key role in developing a web application that generates personalized learning roadmaps by analyzing users' current jobs, goal jobs, and skills. I extracted text from user-uploaded resumes stored in S3 buckets and integrated it with the Gemini API to identify relevant skills. By combining API-extracted skills with user inputs, I created targeted skill development plans. Additionally, I utilized S3 buckets to store static files for enhanced performance and scalability and contributed to both backend and frontend development, ensuring efficient data handling and a user-friendly interface.", "HTML, CSS,JavaScript, Django", "https://github.com/ojaskittur/careertrix");
     });
 
     profileButton.addEventListener('click', function (e) {
