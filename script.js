@@ -38,7 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     fileUploadButton.addEventListener('click', function (e) {
         e.preventDefault();
-        showProjectDetails("The project is a straightforward question paper sharing repository built using Django, HTML, and CSS. It provides a simple platform for users to upload and download question papers from various time slots. The core functionality revolves around a user-friendly interface where individuals can effortlessly upload question papers associated with different time slots or academic sessions.Upon accessing the platform, users are presented with clear options to either upload or download question papers. Uploading is intuitive, requiring users to provide necessary details such as the slot, subject, and any additional relevant information. Similarly, downloading question papers is uncomplicated, with users being able to easily navigate through available slots and subjects to find the desired papers.By prioritizing simplicity, the project aims to offer a streamlined experience for users without overwhelming them with unnecessary features or complexities. ", "HTML, CSS, Django", "https://github.com/ojaskittur/404_NOT_FOUND/tree/main/django-upload-example");
+        showProjectDetails("
+
+I played a key role in developing a web application that generates personalized learning roadmaps by analyzing users' current jobs, goal jobs, and skills. I extracted text from user-uploaded resumes stored in S3 buckets and integrated it with the Gemini API to identify relevant skills. By combining API-extracted skills with user inputs, I created targeted skill development plans. Additionally, I utilized S3 buckets to store static files for enhanced performance and scalability and contributed to both backend and frontend development, ensuring efficient data handling and a user-friendly interface.", "HTML, CSS,JavaScript, Django", "https://github.com/ojaskittur/careertrix");
     });
 
     profileButton.addEventListener('click', function (e) {
